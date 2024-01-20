@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
     <script defer src="js/script.js"></script>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/list.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class="body">
-    <h1 class="header">Lista Zadań</h1>
-<div class="form">
-    <form class="js-form">
-        <p class="form__header">
-            <label class="form__label"> Dodaj nowe zadanie</label>
-        </p>
-        <input class="js-newTask form__input">
-        <button class="form__button">Dodaj zadanie</button>
-    </form>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/list.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="body">
+    <div class="header">
+      <h1>Lista Zadań</h1>
+    </div>
+
+<div class="container">
+
+  <div class="form__header">
+    <p>Dodaj nowe zadanie</p>
+  </div>
+
+
+  <form class="js-form form">
+    <div>
+      <input value="co jest do zrobienia?" class="js-newTask form__input" />
+    </div>
+  <div>
+    <button class="form__button">Dodaj zadanie</button>
+  </div>
+  </form>
+
 
 </div>
+
+  <section class="container">
+    <p class="list__header">lista zadań</p>
     <ul class="js-tasks list"></ul>
-</body>
+  </section>
+  </body>
 </html>

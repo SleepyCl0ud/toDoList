@@ -1,14 +1,47 @@
 html {
   box-sizing: border-box;
 }
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
+.form__header {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  padding-left: 3%;
+
+}
+
 .form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 78% 20%;
+  gap: 2%;
+  background-color: white;
+  padding: 30px;
+margin: 7px 0;
+}
+
+.form__button {
+  border: none;
+background-color: teal;
+color: white;
+font-size:20px ;
+padding: 10px;
+width: 100%;
+}
+
+.form__input {
+  width: 100%;
+  padding: 8px;
+  font-size: 20px;
+  border: solid 2px rgb(216, 216, 216);
+}
+
+
+
+.container {
+  width: 80%;
+  margin: auto;
 }

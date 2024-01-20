@@ -4,3 +4,26 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  .list {
+  
+    background-color: white;
+  
+  }
+
+.list__header {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  padding-left: 3%;
+  margin: 10px 0px;
+}
+
+.list__item {
+  font-size: 20px;
+}
+
+.list__item--done {
+  text-decoration: line-through;
+}
