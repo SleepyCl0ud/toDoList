@@ -1,34 +1,40 @@
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  .list {
+.list {
   display: flex;
   flex-direction: column;
-    background-color: white;
+  background-color: white;
   list-style-type: none;
-  }
+  margin: 0px;
+  box-shadow: 0px 3px 10px 0px rgba(179, 179, 179, 1);
+}
 
 .list__header {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 900;
   background-color: white;
-  padding: 10px;
-  padding-left: 3%;
-  margin: 10px 0px;
+  padding: 30px;
+  padding-left: 35px;
+  margin: 10px 0px 5px;
+  box-shadow: 0px 3px 10px 0px rgba(179, 179, 179, 1);
 }
 
 .list__item {
+  width: 95%;
   font-size: 20px;
   margin: 15px 0px;
+  border-bottom: solid 2px #eeefef;
   padding: 10px;
-  border-bottom:solid 2px lightgray ;
-
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 5% 75% 10%;
+  gap: 5%;
   align-items: center;
 }
 
@@ -37,11 +43,10 @@ html {
 }
 
 .list__button {
-  background-color: green;
+  background-color: #3a7a2d;
   border: none;
   height: 40px;
   width: 40px;
- 
 }
 
 .list__button--done {
@@ -49,20 +54,18 @@ html {
   background-repeat: no-repeat;
   background-size: contain;
   height: 40px;
- width: 40px;
-
- 
-
+  width: 40px;
 }
 
 .list__button--remove {
-  background-color: red;
+  background-color: #da2d44;
   background-image: url("../images/bin128.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 75%;
   border: none;
   height: 40px;
- width: 40px;
+  width: 40px;
   order: 2;
+  justify-self: end;
 }
