@@ -6,9 +6,10 @@ html {
   }
 
   .list {
-  
+  display: flex;
+  flex-direction: column;
     background-color: white;
-  
+  list-style-type: none;
   }
 
 .list__header {
@@ -22,8 +23,46 @@ html {
 
 .list__item {
   font-size: 20px;
+  margin: 15px 0px;
+  padding: 10px;
+  border-bottom:solid 2px lightgray ;
+
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  align-items: center;
 }
 
 .list__item--done {
   text-decoration: line-through;
+}
+
+.list__button {
+  background-color: green;
+  border: none;
+  height: 40px;
+  width: 40px;
+ 
+}
+
+.list__button--done {
+  background-image: url("../images/check128.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+ width: 40px;
+
+ 
+
+}
+
+.list__button--remove {
+  background-color: red;
+  background-image: url("../images/bin128.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 75%;
+  border: none;
+  height: 40px;
+ width: 40px;
+  order: 2;
 }
