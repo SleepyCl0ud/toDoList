@@ -33,8 +33,8 @@ html {
   border-bottom: solid 2px #eeefef;
   padding: 10px;
   display: grid;
-  grid-template-columns: 5% 75% 10%;
-  gap: 5%;
+  grid-template-columns: 5% 70% 5%;
+  gap: 10%;
   align-items: center;
 }
 
@@ -68,4 +68,13 @@ html {
   width: 40px;
   order: 2;
   justify-self: end;
+}
+
+@media (max-width: 768px) {
+  .list__item {
+    width: 95%;
+    font-size: 16px;
+    grid-template-columns: 5% 60% 5%;
+    gap: 15%;
+  }
 }
