@@ -53,7 +53,9 @@
       htmlString += `
             <li
             class="list__item${task.done ? " list__item--done" : ""}">
-            <button class="js-done list__button${task.done ? " list__button--done" : ""}"> </button>
+            <button class="js-done list__button${
+              task.done ? " list__button--done" : ""
+            }"> </button>
             <button class="js-remove list__button--remove"> </button>
             ${task.content}
             </li>
@@ -74,7 +76,11 @@
       return;
     }
 
-    addNewTask(newTaskContent);
+    if (newTaskContent !== "") {
+      addNewTask(newTaskContent);
+      document.querySelector(".js-newTask").value = "";
+    }
+    document.querySelector(".js-newTask").focus();
   };
 
   const init = () => {
