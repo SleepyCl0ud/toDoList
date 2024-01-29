@@ -1,13 +1,15 @@
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  .header {
-    padding-left: 10%;
-    margin: auto;
-    font-size: 25px;
-    font-weight: 900;
-  }
+.header {
+  padding-left: 10%;
+  margin: auto;
+  font-size: 25px;
+  font-weight: 900;
+}

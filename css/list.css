@@ -16,25 +16,14 @@ html {
   box-shadow: 0px 3px 10px 0px rgba(179, 179, 179, 1);
 }
 
-.list__header {
-  font-size: 24px;
-  font-weight: 900;
-  background-color: white;
-  padding: 30px;
-  padding-left: 35px;
-  margin: 10px 0px 5px;
-  box-shadow: 0px 3px 10px 0px rgba(179, 179, 179, 1);
-}
-
 .list__item {
-  width: 95%;
   font-size: 20px;
   margin: 15px 0px;
   border-bottom: solid 2px #eeefef;
   padding: 10px;
   display: grid;
-  grid-template-columns: 5% 70% 5%;
-  gap: 10%;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 20px;
   align-items: center;
 }
 
